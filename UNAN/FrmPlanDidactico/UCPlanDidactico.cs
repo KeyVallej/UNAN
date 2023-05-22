@@ -15,5 +15,9 @@ namespace UNAN.FrmPlanDidactico
         {
             InitializeComponent();
         }
+
+        private void btnVolver_Click(object sender, EventArgs e)
+        {
+        }
     }
 }
