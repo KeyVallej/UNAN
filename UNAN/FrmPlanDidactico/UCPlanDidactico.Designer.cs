@@ -406,7 +406,6 @@
             // 
             // txtEstEva
             // 
-            this.txtEstEva.Enabled = false;
             this.txtEstEva.Location = new System.Drawing.Point(779, 142);
             this.txtEstEva.Multiline = true;
             this.txtEstEva.Name = "txtEstEva";
@@ -415,7 +414,6 @@
             // 
             // txtForEva
             // 
-            this.txtForEva.Enabled = false;
             this.txtForEva.Location = new System.Drawing.Point(394, 142);
             this.txtForEva.Multiline = true;
             this.txtForEva.Name = "txtForEva";
@@ -424,7 +422,6 @@
             // 
             // txtCont
             // 
-            this.txtCont.Enabled = false;
             this.txtCont.Location = new System.Drawing.Point(832, 13);
             this.txtCont.Multiline = true;
             this.txtCont.Name = "txtCont";
@@ -433,7 +430,6 @@
             // 
             // txtEstEnsApr
             // 
-            this.txtEstEnsApr.Enabled = false;
             this.txtEstEnsApr.Location = new System.Drawing.Point(9, 142);
             this.txtEstEnsApr.Multiline = true;
             this.txtEstEnsApr.Name = "txtEstEnsApr";
@@ -442,7 +438,6 @@
             // 
             // txtObj
             // 
-            this.txtObj.Enabled = false;
             this.txtObj.Location = new System.Drawing.Point(470, 13);
             this.txtObj.Multiline = true;
             this.txtObj.Name = "txtObj";
