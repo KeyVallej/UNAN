@@ -97,7 +97,7 @@ namespace UNAN
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Consolas", 13.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(19, 36);
+            this.label1.Location = new System.Drawing.Point(442, 51);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(959, 43);
             this.label1.TabIndex = 1;
@@ -402,7 +402,6 @@ namespace UNAN
             this.MinimizeBox = false;
             this.Name = "frmMenu";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "..::Menu Principal::..";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.panel1.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
