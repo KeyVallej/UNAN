@@ -260,34 +260,37 @@
             this.flowLayoutPanel1.Controls.Add(this.btnSubir);
             this.flowLayoutPanel1.Location = new System.Drawing.Point(279, 238);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(480, 50);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(597, 50);
             this.flowLayoutPanel1.TabIndex = 6;
             // 
             // btnInsertar
             // 
             this.btnInsertar.Location = new System.Drawing.Point(3, 3);
             this.btnInsertar.Name = "btnInsertar";
-            this.btnInsertar.Size = new System.Drawing.Size(104, 39);
+            this.btnInsertar.Size = new System.Drawing.Size(143, 39);
             this.btnInsertar.TabIndex = 5;
             this.btnInsertar.Text = "Insertar";
+            this.btnInsertar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnInsertar.UseVisualStyleBackColor = true;
             // 
             // btnSubirPlan
             // 
-            this.btnSubirPlan.Location = new System.Drawing.Point(113, 3);
+            this.btnSubirPlan.Location = new System.Drawing.Point(152, 3);
             this.btnSubirPlan.Name = "btnSubirPlan";
-            this.btnSubirPlan.Size = new System.Drawing.Size(180, 39);
+            this.btnSubirPlan.Size = new System.Drawing.Size(219, 39);
             this.btnSubirPlan.TabIndex = 6;
             this.btnSubirPlan.Text = "Insertar Plan Didáctico";
+            this.btnSubirPlan.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnSubirPlan.UseVisualStyleBackColor = true;
             // 
             // btnSubir
             // 
-            this.btnSubir.Location = new System.Drawing.Point(299, 3);
+            this.btnSubir.Location = new System.Drawing.Point(377, 3);
             this.btnSubir.Name = "btnSubir";
-            this.btnSubir.Size = new System.Drawing.Size(169, 39);
+            this.btnSubir.Size = new System.Drawing.Size(208, 39);
             this.btnSubir.TabIndex = 5;
             this.btnSubir.Text = "Subir Plan Didáctico";
+            this.btnSubir.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnSubir.UseVisualStyleBackColor = true;
             // 
             // label14
