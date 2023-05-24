@@ -35,11 +35,13 @@ namespace UNAN
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel18 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.label1 = new System.Windows.Forms.Label();
+            this.lblNombre = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
             this.pbUser = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel5 = new System.Windows.Forms.Panel();
+            this.panel10 = new System.Windows.Forms.Panel();
+            this.lblReloj = new System.Windows.Forms.Label();
             this.panel17 = new System.Windows.Forms.Panel();
             this.button7 = new System.Windows.Forms.Button();
             this.panel16 = new System.Windows.Forms.Panel();
@@ -58,8 +60,6 @@ namespace UNAN
             this.panel9 = new System.Windows.Forms.Panel();
             this.panel7 = new System.Windows.Forms.Panel();
             this.lblUser = new System.Windows.Forms.Label();
-            this.panel10 = new System.Windows.Forms.Panel();
-            this.lblReloj = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel6.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -69,8 +69,8 @@ namespace UNAN
             ((System.ComponentModel.ISupportInitialize)(this.pbUser)).BeginInit();
             this.panel2.SuspendLayout();
             this.panel5.SuspendLayout();
-            this.panel7.SuspendLayout();
             this.panel10.SuspendLayout();
+            this.panel7.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -111,7 +111,7 @@ namespace UNAN
             // 
             this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.panel3.Controls.Add(this.panel18);
-            this.panel3.Controls.Add(this.label1);
+            this.panel3.Controls.Add(this.lblNombre);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel3.Location = new System.Drawing.Point(0, 0);
             this.panel3.Margin = new System.Windows.Forms.Padding(2);
@@ -141,17 +141,18 @@ namespace UNAN
             this.pictureBox1.TabIndex = 2;
             this.pictureBox1.TabStop = false;
             // 
-            // label1
+            // lblNombre
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Consolas", 13.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(221, 27);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(480, 22);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "Sistema Control de Asistencia Docentes Horarios";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.lblNombre.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblNombre.AutoSize = true;
+            this.lblNombre.Font = new System.Drawing.Font("Consolas", 13.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNombre.Location = new System.Drawing.Point(221, 27);
+            this.lblNombre.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblNombre.Name = "lblNombre";
+            this.lblNombre.Size = new System.Drawing.Size(480, 22);
+            this.lblNombre.TabIndex = 1;
+            this.lblNombre.Text = "Sistema Control de Asistencia Docentes Horarios";
+            this.lblNombre.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // panel4
             // 
@@ -213,6 +214,31 @@ namespace UNAN
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(150, 681);
             this.panel5.TabIndex = 2;
+            // 
+            // panel10
+            // 
+            this.panel10.Controls.Add(this.lblReloj);
+            this.panel10.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel10.Location = new System.Drawing.Point(8, 599);
+            this.panel10.Margin = new System.Windows.Forms.Padding(2);
+            this.panel10.Name = "panel10";
+            this.panel10.Size = new System.Drawing.Size(142, 82);
+            this.panel10.TabIndex = 23;
+            // 
+            // lblReloj
+            // 
+            this.lblReloj.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblReloj.AutoSize = true;
+            this.lblReloj.BackColor = System.Drawing.Color.Transparent;
+            this.lblReloj.Font = new System.Drawing.Font("Consolas", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblReloj.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.lblReloj.Location = new System.Drawing.Point(7, 14);
+            this.lblReloj.Name = "lblReloj";
+            this.lblReloj.Size = new System.Drawing.Size(129, 28);
+            this.lblReloj.TabIndex = 23;
+            this.lblReloj.Text = "11:26 a.m";
             // 
             // panel17
             // 
@@ -396,31 +422,6 @@ namespace UNAN
             this.lblUser.Text = "User Name";
             this.lblUser.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // panel10
-            // 
-            this.panel10.Controls.Add(this.lblReloj);
-            this.panel10.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel10.Location = new System.Drawing.Point(8, 599);
-            this.panel10.Margin = new System.Windows.Forms.Padding(2);
-            this.panel10.Name = "panel10";
-            this.panel10.Size = new System.Drawing.Size(142, 82);
-            this.panel10.TabIndex = 23;
-            // 
-            // lblReloj
-            // 
-            this.lblReloj.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.lblReloj.AutoSize = true;
-            this.lblReloj.BackColor = System.Drawing.Color.Transparent;
-            this.lblReloj.Font = new System.Drawing.Font("Consolas", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblReloj.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lblReloj.Location = new System.Drawing.Point(7, 14);
-            this.lblReloj.Name = "lblReloj";
-            this.lblReloj.Size = new System.Drawing.Size(129, 28);
-            this.lblReloj.TabIndex = 23;
-            this.lblReloj.Text = "11:26 a.m";
-            // 
             // frmMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -444,10 +445,10 @@ namespace UNAN
             ((System.ComponentModel.ISupportInitialize)(this.pbUser)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel5.ResumeLayout(false);
-            this.panel7.ResumeLayout(false);
-            this.panel7.PerformLayout();
             this.panel10.ResumeLayout(false);
             this.panel10.PerformLayout();
+            this.panel7.ResumeLayout(false);
+            this.panel7.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -455,7 +456,7 @@ namespace UNAN
         #endregion
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lblNombre;
         private System.Windows.Forms.Panel panel6;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Panel panel7;

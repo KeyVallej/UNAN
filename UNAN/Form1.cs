@@ -23,6 +23,7 @@ namespace UNAN
             UCPlanDidactico plan = new UCPlanDidactico();
             plan.Dock = DockStyle.Fill;
             panel6.Controls.Add(plan);
+            lblNombre.Text = "Plan Didactico Semestral";
         }
 
         private void button7_Click(object sender, EventArgs e)
