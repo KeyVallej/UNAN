@@ -19,5 +19,20 @@ namespace UNAN.FrmPlanDidactico
         private void btnVolver_Click(object sender, EventArgs e)
         {
         }
+
+        private void gbDatos_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnSubir_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtSemFin_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

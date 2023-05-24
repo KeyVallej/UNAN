@@ -18,3 +18,13 @@ C:\Users\lfeli\source\repos\UNAN\UNAN\obj\Debug\UNAN.csproj.GenerateResource.cac
 C:\Users\lfeli\source\repos\UNAN\UNAN\obj\Debug\UNAN.csproj.CoreCompileInputs.cache
 C:\Users\lfeli\source\repos\UNAN\UNAN\obj\Debug\UNAN.exe
 C:\Users\lfeli\source\repos\UNAN\UNAN\obj\Debug\UNAN.pdb
+C:\Users\Keyling Vallejos\source\repos\UNAN\UNAN\bin\Debug\UNAN.exe
+C:\Users\Keyling Vallejos\source\repos\UNAN\UNAN\bin\Debug\UNAN.pdb
+C:\Users\Keyling Vallejos\source\repos\UNAN\UNAN\obj\Debug\UNAN.csproj.AssemblyReference.cache
+C:\Users\Keyling Vallejos\source\repos\UNAN\UNAN\obj\Debug\UNAN.frmMenu.resources
+C:\Users\Keyling Vallejos\source\repos\UNAN\UNAN\obj\Debug\UNAN.FrmPlanDidactico.UCPlanDidactico.resources
+C:\Users\Keyling Vallejos\source\repos\UNAN\UNAN\obj\Debug\UNAN.Properties.Resources.resources
+C:\Users\Keyling Vallejos\source\repos\UNAN\UNAN\obj\Debug\UNAN.csproj.GenerateResource.cache
+C:\Users\Keyling Vallejos\source\repos\UNAN\UNAN\obj\Debug\UNAN.csproj.CoreCompileInputs.cache
+C:\Users\Keyling Vallejos\source\repos\UNAN\UNAN\obj\Debug\UNAN.exe
+C:\Users\Keyling Vallejos\source\repos\UNAN\UNAN\obj\Debug\UNAN.pdb
