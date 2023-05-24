@@ -29,7 +29,11 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.panel2 = new System.Windows.Forms.Panel();
             this.GBDetalles = new System.Windows.Forms.GroupBox();
+            this.cbCarrera = new System.Windows.Forms.ComboBox();
+            this.label17 = new System.Windows.Forms.Label();
             this.cbSemestre = new System.Windows.Forms.ComboBox();
             this.label6 = new System.Windows.Forms.Label();
             this.cbGrupo = new System.Windows.Forms.ComboBox();
@@ -75,10 +79,6 @@
             this.FormEva = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.EstrEva = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Porcentaje = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.cbCarrera = new System.Windows.Forms.ComboBox();
-            this.label17 = new System.Windows.Forms.Label();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.panel3 = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
             this.GBDetalles.SuspendLayout();
             this.gbDatos.SuspendLayout();
@@ -96,6 +96,24 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1137, 45);
             this.panel1.TabIndex = 0;
+            // 
+            // panel3
+            // 
+            this.panel3.BackColor = System.Drawing.Color.Yellow;
+            this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel3.Location = new System.Drawing.Point(0, 16);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(1137, 17);
+            this.panel3.TabIndex = 1;
+            // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.Red;
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel2.Location = new System.Drawing.Point(0, 0);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(1137, 16);
+            this.panel2.TabIndex = 0;
             // 
             // GBDetalles
             // 
@@ -120,14 +138,41 @@
             this.GBDetalles.TabIndex = 1;
             this.GBDetalles.TabStop = false;
             // 
+            // cbCarrera
+            // 
+            this.cbCarrera.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.cbCarrera.FormattingEnabled = true;
+            this.cbCarrera.Items.AddRange(new object[] {
+            "Primer Año",
+            "Segundo Año",
+            "Tercer Año",
+            "Cuarto Año",
+            "Quinto Año"});
+            this.cbCarrera.Location = new System.Drawing.Point(797, 18);
+            this.cbCarrera.Name = "cbCarrera";
+            this.cbCarrera.Size = new System.Drawing.Size(240, 30);
+            this.cbCarrera.TabIndex = 7;
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.label17.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.label17.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label17.Location = new System.Drawing.Point(701, 22);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(90, 26);
+            this.label17.TabIndex = 6;
+            this.label17.Text = "Carrera:";
+            // 
             // cbSemestre
             // 
-            this.cbSemestre.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.cbSemestre.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.cbSemestre.FormattingEnabled = true;
             this.cbSemestre.Items.AddRange(new object[] {
             "l",
             "ll"});
-            this.cbSemestre.Location = new System.Drawing.Point(519, 65);
+            this.cbSemestre.Location = new System.Drawing.Point(531, 65);
             this.cbSemestre.Name = "cbSemestre";
             this.cbSemestre.Size = new System.Drawing.Size(161, 30);
             this.cbSemestre.TabIndex = 5;
@@ -135,6 +180,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
+            this.label6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.label6.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.label6.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.Location = new System.Drawing.Point(417, 66);
@@ -145,7 +191,7 @@
             // 
             // cbGrupo
             // 
-            this.cbGrupo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.cbGrupo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.cbGrupo.FormattingEnabled = true;
             this.cbGrupo.Items.AddRange(new object[] {
             "Primer Año",
@@ -161,6 +207,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
+            this.label4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.label4.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.label4.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.Location = new System.Drawing.Point(716, 68);
@@ -171,15 +218,15 @@
             // 
             // txtDocente
             // 
-            this.txtDocente.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.txtDocente.Location = new System.Drawing.Point(130, 66);
+            this.txtDocente.BackColor = System.Drawing.Color.White;
+            this.txtDocente.Location = new System.Drawing.Point(138, 66);
             this.txtDocente.Name = "txtDocente";
             this.txtDocente.Size = new System.Drawing.Size(260, 29);
             this.txtDocente.TabIndex = 3;
             // 
             // txtAAcademico
             // 
-            this.txtAAcademico.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.txtAAcademico.BackColor = System.Drawing.Color.White;
             this.txtAAcademico.Location = new System.Drawing.Point(580, 25);
             this.txtAAcademico.Name = "txtAAcademico";
             this.txtAAcademico.Size = new System.Drawing.Size(100, 29);
@@ -189,6 +236,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.label3.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.label3.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(409, 22);
@@ -199,7 +247,7 @@
             // 
             // cbAsignaturas
             // 
-            this.cbAsignaturas.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.cbAsignaturas.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.cbAsignaturas.FormattingEnabled = true;
             this.cbAsignaturas.Items.AddRange(new object[] {
             "Estructura l",
@@ -215,6 +263,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
+            this.label5.BackColor = System.Drawing.Color.Gainsboro;
             this.label5.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.label5.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.Location = new System.Drawing.Point(35, 66);
@@ -226,6 +275,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.label2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.label2.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(6, 22);
@@ -279,12 +329,12 @@
             // 
             // btnInsertar
             // 
-            this.btnInsertar.BackColor = System.Drawing.Color.Blue;
+            this.btnInsertar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.btnInsertar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnInsertar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnInsertar.FlatAppearance.BorderSize = 0;
             this.btnInsertar.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnInsertar.ForeColor = System.Drawing.Color.White;
+            this.btnInsertar.ForeColor = System.Drawing.Color.Black;
             this.btnInsertar.Image = global::UNAN.Properties.Resources.Add_32x;
             this.btnInsertar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnInsertar.Location = new System.Drawing.Point(3, 3);
@@ -297,9 +347,9 @@
             // 
             // btnSubirPlan
             // 
-            this.btnSubirPlan.BackColor = System.Drawing.Color.Blue;
+            this.btnSubirPlan.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.btnSubirPlan.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSubirPlan.ForeColor = System.Drawing.Color.White;
+            this.btnSubirPlan.ForeColor = System.Drawing.Color.Black;
             this.btnSubirPlan.Image = global::UNAN.Properties.Resources.save32px;
             this.btnSubirPlan.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnSubirPlan.Location = new System.Drawing.Point(130, 3);
@@ -312,9 +362,9 @@
             // 
             // btnSubir
             // 
-            this.btnSubir.BackColor = System.Drawing.Color.Blue;
+            this.btnSubir.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.btnSubir.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSubir.ForeColor = System.Drawing.Color.White;
+            this.btnSubir.ForeColor = System.Drawing.Color.Black;
             this.btnSubir.Image = global::UNAN.Properties.Resources.up_32px;
             this.btnSubir.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnSubir.Location = new System.Drawing.Point(314, 3);
@@ -356,7 +406,7 @@
             // dtFechaFin
             // 
             this.dtFechaFin.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtFechaFin.Location = new System.Drawing.Point(110, 68);
+            this.dtFechaFin.Location = new System.Drawing.Point(110, 67);
             this.dtFechaFin.Name = "dtFechaFin";
             this.dtFechaFin.Size = new System.Drawing.Size(109, 26);
             this.dtFechaFin.TabIndex = 2;
@@ -364,6 +414,7 @@
             // label13
             // 
             this.label13.AutoSize = true;
+            this.label13.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.label13.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.label13.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label13.Location = new System.Drawing.Point(845, 117);
@@ -375,6 +426,7 @@
             // label12
             // 
             this.label12.AutoSize = true;
+            this.label12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.label12.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.label12.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label12.Location = new System.Drawing.Point(472, 115);
@@ -386,9 +438,10 @@
             // label11
             // 
             this.label11.AutoSize = true;
+            this.label11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.label11.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.label11.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(762, 50);
+            this.label11.Location = new System.Drawing.Point(779, 50);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(104, 24);
             this.label11.TabIndex = 1;
@@ -397,6 +450,7 @@
             // label10
             // 
             this.label10.AutoSize = true;
+            this.label10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.label10.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.label10.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.Location = new System.Drawing.Point(9, 115);
@@ -408,9 +462,10 @@
             // label9
             // 
             this.label9.AutoSize = true;
+            this.label9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.label9.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.label9.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(394, 50);
+            this.label9.Location = new System.Drawing.Point(416, 50);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(97, 24);
             this.label9.TabIndex = 1;
@@ -419,44 +474,49 @@
             // label16
             // 
             this.label16.AutoSize = true;
+            this.label16.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.label16.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.label16.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label16.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label16.Location = new System.Drawing.Point(225, 24);
             this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(113, 20);
+            this.label16.Size = new System.Drawing.Size(124, 21);
             this.label16.TabIndex = 1;
             this.label16.Text = "Semana Inicio:";
             // 
             // label8
             // 
             this.label8.AutoSize = true;
+            this.label8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.label8.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.label8.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.Location = new System.Drawing.Point(225, 74);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(99, 20);
+            this.label8.Size = new System.Drawing.Size(107, 21);
             this.label8.TabIndex = 1;
             this.label8.Text = "Semana Fin:";
             // 
             // label15
             // 
             this.label15.AutoSize = true;
+            this.label15.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.label15.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.label15.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label15.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label15.ForeColor = System.Drawing.Color.Black;
             this.label15.Location = new System.Drawing.Point(3, 21);
             this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(98, 20);
+            this.label15.Size = new System.Drawing.Size(109, 21);
             this.label15.TabIndex = 1;
             this.label15.Text = "Fecha Inicio:";
             // 
             // label7
             // 
             this.label7.AutoSize = true;
+            this.label7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.label7.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.label7.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(18, 74);
+            this.label7.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(12, 73);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(84, 20);
+            this.label7.Size = new System.Drawing.Size(92, 21);
             this.label7.TabIndex = 1;
             this.label7.Text = "Fecha Fin:";
             // 
@@ -478,10 +538,10 @@
             // 
             // txtCont
             // 
-            this.txtCont.Location = new System.Drawing.Point(872, 21);
+            this.txtCont.Location = new System.Drawing.Point(896, 25);
             this.txtCont.Multiline = true;
             this.txtCont.Name = "txtCont";
-            this.txtCont.Size = new System.Drawing.Size(259, 78);
+            this.txtCont.Size = new System.Drawing.Size(235, 78);
             this.txtCont.TabIndex = 0;
             // 
             // txtEstEnsApr
@@ -494,17 +554,17 @@
             // 
             // txtObj
             // 
-            this.txtObj.Location = new System.Drawing.Point(497, 28);
+            this.txtObj.Location = new System.Drawing.Point(519, 32);
             this.txtObj.Multiline = true;
             this.txtObj.Name = "txtObj";
-            this.txtObj.Size = new System.Drawing.Size(261, 78);
+            this.txtObj.Size = new System.Drawing.Size(249, 71);
             this.txtObj.TabIndex = 0;
             // 
             // txtSemInicio
             // 
             this.txtSemInicio.BackColor = System.Drawing.Color.White;
             this.txtSemInicio.Enabled = false;
-            this.txtSemInicio.Location = new System.Drawing.Point(344, 18);
+            this.txtSemInicio.Location = new System.Drawing.Point(355, 21);
             this.txtSemInicio.Name = "txtSemInicio";
             this.txtSemInicio.Size = new System.Drawing.Size(59, 26);
             this.txtSemInicio.TabIndex = 0;
@@ -513,7 +573,7 @@
             // 
             this.txtSemFin.BackColor = System.Drawing.Color.White;
             this.txtSemFin.Enabled = false;
-            this.txtSemFin.Location = new System.Drawing.Point(329, 68);
+            this.txtSemFin.Location = new System.Drawing.Point(338, 71);
             this.txtSemFin.Name = "txtSemFin";
             this.txtSemFin.Size = new System.Drawing.Size(58, 26);
             this.txtSemFin.TabIndex = 0;
@@ -608,50 +668,6 @@
             this.Porcentaje.MinimumWidth = 10;
             this.Porcentaje.Name = "Porcentaje";
             this.Porcentaje.ReadOnly = true;
-            // 
-            // cbCarrera
-            // 
-            this.cbCarrera.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.cbCarrera.FormattingEnabled = true;
-            this.cbCarrera.Items.AddRange(new object[] {
-            "Primer Año",
-            "Segundo Año",
-            "Tercer Año",
-            "Cuarto Año",
-            "Quinto Año"});
-            this.cbCarrera.Location = new System.Drawing.Point(797, 18);
-            this.cbCarrera.Name = "cbCarrera";
-            this.cbCarrera.Size = new System.Drawing.Size(240, 30);
-            this.cbCarrera.TabIndex = 7;
-            // 
-            // label17
-            // 
-            this.label17.AutoSize = true;
-            this.label17.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.label17.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label17.Location = new System.Drawing.Point(701, 22);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(90, 26);
-            this.label17.TabIndex = 6;
-            this.label17.Text = "Carrera:";
-            // 
-            // panel2
-            // 
-            this.panel2.BackColor = System.Drawing.Color.Red;
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel2.Location = new System.Drawing.Point(0, 0);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1137, 16);
-            this.panel2.TabIndex = 0;
-            // 
-            // panel3
-            // 
-            this.panel3.BackColor = System.Drawing.Color.Yellow;
-            this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel3.Location = new System.Drawing.Point(0, 16);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(1137, 17);
-            this.panel3.TabIndex = 1;
             // 
             // UCPlanDidactico
             // 
